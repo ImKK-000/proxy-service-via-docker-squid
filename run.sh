@@ -7,3 +7,5 @@ docker run --name proxy-service -d \
   --volume $PWD/squid/log/access.log:/var/log/squid/access.log \
   --volume $PWD/squid/cache:/var/spool/squid \
   sameersbn/squid:3.5.27
+
+tail -f squid/log/access.log
